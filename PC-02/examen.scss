@@ -1,0 +1,70 @@
+$primary-color: #532661;
+$secondary-color: #774097;
+$text-color: #fff;
+$background-color: #f4f4f4;
+$font: 'Arial', sans-serif;
+
+body {
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.header {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 1.5rem;
+  text-align: center;
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+
+    li {
+      display: inline;
+      margin: 0 10px;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  padding: 2rem;
+
+  .text-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .images-section img {
+    width: 300px;
+    margin: 10px;
+    border: 3px solid $secondary-color;
+    border-radius: 5px;
+  }
+
+  .video-section iframe {
+    margin: 10px;
+    max-width: 100%;
+    border: 2px solid $primary-color;
+  }
+}
+
+.footer {
+  background-color: $primary-color;
+  color: $text-color;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
